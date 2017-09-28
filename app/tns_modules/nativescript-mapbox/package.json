@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-mapbox",
+        "scope": null,
+        "escapedName": "nativescript-mapbox",
+        "name": "nativescript-mapbox",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/javierfont/Development/Nativescript/nativescript-car-park"
+    ]
+  ],
+  "_from": "nativescript-mapbox@latest",
+  "_id": "nativescript-mapbox@3.1.1",
+  "_inCache": true,
+  "_location": "/nativescript-mapbox",
+  "_nodeVersion": "6.10.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-mapbox-3.1.1.tgz_1503567521521_0.6526662504766136"
+  },
+  "_npmUser": {
+    "name": "eddyverbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-mapbox",
+    "scope": null,
+    "escapedName": "nativescript-mapbox",
+    "name": "nativescript-mapbox",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-mapbox/-/nativescript-mapbox-3.1.1.tgz",
+  "_shasum": "5d120fb6d4ec14de84836bc6053bce2cafe6a717",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-mapbox",
+  "_where": "/Users/javierfont/Development/Nativescript/nativescript-car-park",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eddyverbruggen/nativescript-mapbox/issues"
+  },
+  "dependencies": {},
+  "description": "Native Maps, by Mapbox.",
+  "devDependencies": {
+    "tns-core-modules": "^3.1.0",
+    "tns-platform-declarations": "^3.1.0",
+    "tslint": "^5.1.0",
+    "typescript": "~2.3.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "5d120fb6d4ec14de84836bc6053bce2cafe6a717",
+    "tarball": "https://registry.npmjs.org/nativescript-mapbox/-/nativescript-mapbox-3.1.1.tgz"
+  },
+  "homepage": "https://github.com/eddyverbruggen/nativescript-mapbox",
+  "keywords": [
+    "ecosystem:nativescript",
+    "NativeScript",
+    "Map",
+    "Maps",
+    "Native Maps",
+    "Mapbox"
+  ],
+  "license": "MIT",
+  "main": "mapbox",
+  "maintainers": [
+    {
+      "name": "eddyverbruggen",
+      "email": "eddyverbruggen@gmail.com"
+    }
+  ],
+  "name": "nativescript-mapbox",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0",
+      "ios": "2.5.0"
+    },
+    "plugin": {
+      "nan": true,
+      "pan": true,
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "^3.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyverbruggen/nativescript-mapbox.git"
+  },
+  "scripts": {
+    "build": "tsc -skipLibCheck",
+    "demo.android": "npm run preparedemo && cd ../demo && tns platform remove android && tns run android --justlaunch",
+    "demo.ios": "npm run preparedemo && cd ../demo && tns platform remove ios && tns run ios --emulator",
+    "demo.ios.device": "npm run preparedemo && cd ../demo && tns platform remove ios && tns run ios",
+    "development.setup": "npm run setup && npm link && cd ../demo && npm link nativescript-mapbox && cd ../src",
+    "disabled-prepublish": "npm run build",
+    "generate.typings.ios": "cd ../demo && TNS_DEBUG_METADATA_PATH=\"$(pwd)/metadata\" tns build ios && TNS_TYPESCRIPT_DECLARATIONS_PATH=\"$(pwd)/typings\" tns build ios && echo 'Now look for your library typings in demo/typings!'",
+    "preparedemo": "npm run build && cd ../demo && tns plugin remove nativescript-mapbox && tns plugin add ../src && tns install",
+    "setup": "npm i && cd ../demo && npm i && cd ../src && npm run build",
+    "test": "npm i && npm run build && npm run tslint && cd ../demo && tns build android",
+    "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\" --exclude \"src/platforms/ios/Mapbox.d.ts\""
+  },
+  "typings": "index.d.ts",
+  "version": "3.1.1"
+}

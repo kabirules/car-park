@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:map="nativescript-mapbox" 
+    navigatingTo="navigatingTo" actionBarHidden="true">
+  <StackLayout>
+    <Button text="UPDATE MY POSITION" height="12%" tap="enableLoc" class="narrow-button"/>
+    <ContentView height="76%" width="100%">
+      <!-- IMPORTANT: plugin version 3 uses :MapboxView, lower versions use :Mapbox -->
+      <map:MapboxView
+          accessToken="pk.eyJ1Ijoia2FiaXJ1bGVzIiwiYSI6ImNqMHB2bXh3YzAxYmIyd3FhcXA4bHBmOTIifQ.l0K5d65aWdssaoRUdkfLLw"
+          latitude="0"
+          longitude="0"
+          zoomLevel="15"
+          showUserLocation="true"
+          mapStyle="streets"
+          hideLogo="true"
+          disableRotation="true"
+          delay="0"
+          disableTilt="true"
+          mapReady="onMapReady"> 
+      </map:MapboxView>
+    </ContentView>
+    <GridLayout rows="auto" columns="*, *" height="12%">
+      <Button text="PARK!"  tap="addMarker" row="0" col="0"/>
+      <Button text="CHANGE MAP" tap="changeStyle" row="0" col="1"/>
+    </GridLayout>
+  </StackLayout>
+</Page>

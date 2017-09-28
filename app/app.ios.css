@@ -1,0 +1,18 @@
+﻿Page {
+    background-color: white;
+    font-size: 14;
+    text-align: center;
+    vertical-align: middle;
+}
+Button {
+    margin: 8;
+    padding: 8;
+}
+StackLayout {
+    margin: 1;
+    padding: 1;    
+}
+.narrow-button {
+    margin: 2;
+    padding: 2; 
+}

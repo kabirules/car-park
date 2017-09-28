@@ -1,0 +1,14 @@
+﻿Page {
+    background-color: white;
+    font-size: 14;
+    text-align: center;
+    vertical-align: middle;
+}
+Button {
+    margin: 4;
+    padding: 4;
+}
+StackLayout {
+    margin: 1;
+    padding: 1;    
+}

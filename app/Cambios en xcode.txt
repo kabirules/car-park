@@ -1,0 +1,12 @@
+Proyecto Pods -> Build Settings
+Revisar User Defined settings para Debug y Release
+
+StackOverflow's->
+The sandbox is not in sync with the Podfile.lock (debería arreglarse haciendo lo anterior...)
+https://stackoverflow.com/questions/21366549/errorthe-sandbox-is-not-in-sync-with-the-podfile-lock-after-installing-res
+
+Code signing is required for product type 'Application' in SDK '
+https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic
+
+Build fails because Mapbox.framework/ (Igual que el primer stackoverflow)
+https://github.com/mapbox/mapbox-gl-native/issues/2540
