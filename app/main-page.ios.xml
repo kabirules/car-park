@@ -5,7 +5,7 @@
     <ContentView height="82%" width="100%">
       <!-- IMPORTANT: plugin version 3 uses :MapboxView, lower versions use :Mapbox -->
       <map:MapboxView
-          accessToken="pk.eyJ1Ijoia2FiaXJ1bGVzIiwiYSI6ImNqMHB2bXh3YzAxYmIyd3FhcXA4bHBmOTIifQ.l0K5d65aWdssaoRUdkfLLw"
+          accessToken="pk..l0K5d65aWdssaoRUdkfLLw"
           latitude="0"
           longitude="0"
           zoomLevel="15"
