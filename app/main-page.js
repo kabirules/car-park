@@ -2,11 +2,30 @@ var mapbox = require("nativescript-mapbox");
 var geolocation = require("nativescript-geolocation");
 var fs = require("file-system");
 var orientationModule = require("nativescript-screen-orientation");
+var admob = require("nativescript-admob");
 
 var latitude=0;
 var longitude=0;
 var globalArgs;
 var mapStyle=0;
+
+function navigatingTo(args) {
+  console.log('Starting navigatingTo...');
+  admob.createInterstitial({
+    testing: true,
+    iosInterstitialId: "ca-app-pub-2228911308495304/9528184785", // add your own
+    androidInterstitialId: "ca-app-pub-AAAAAAAA/BBBBBB2", // add your own
+    // Android automatically adds the connected device as test device with testing:true, iOS does not
+    iosTestDeviceIds: ["b314dd6cd8b7ccd217533e05e45467ea21df9af9"]
+  }).then(
+      function() {
+        console.log("admob createInterstitial done");
+      },
+      function(error) {
+        console.log("admob createInterstitial error: " + error);
+      }
+  );
+}
 
 function onMapReady(args) {
 
